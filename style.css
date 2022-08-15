@@ -24,6 +24,12 @@ html, body {
     height: 290px;
     margin: 0 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+}
+
+.card:hover {
+    height: 390px;
+   
 }
 
 .card .img {
@@ -56,8 +62,18 @@ html, body {
 
 .card .bottom-text {
     padding: 0 20px 10px 20px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    margin-top: 5px;
     background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+    opacity: 1;
+    visibility: visible;
+    
 }
 
 .card .bottom-text .text{
